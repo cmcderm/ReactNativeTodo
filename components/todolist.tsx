@@ -1,7 +1,6 @@
+import React from 'react';
 import {Text, View} from "react-native";
 import Todo, { Task } from "./todo";
-
-
 
 export default function TodoList() {
 	const testTasks: Task[] = [
