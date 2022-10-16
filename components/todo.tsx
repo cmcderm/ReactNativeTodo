@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import CheckBox from "@react-native-community/checkbox";
+import Checkbox from "expo-checkbox";
 import { useState } from "react";
 
 export interface Task {
@@ -16,9 +16,9 @@ export default function Todo(props: TodoProps) {
   const [taskStatus, setTaskStatus] = useState(false);
   return (
     <View>
-      <CheckBox
+      <Checkbox
         value={taskStatus}
-        onValueChange={(b: boolean) => setTaskStatus(b)}
+        onValueChange={setTaskStatus}
       />
       <Text>{props.task.name}</Text>
     </View>
