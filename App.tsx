@@ -9,12 +9,15 @@ export default function App() {
   const Tab = createBottomTabNavigator();
 
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name={"Tasks"} component={TaskScreen}></Tab.Screen>
-        <Tab.Screen name={"Calendar"} component={CalendarScreen}></Tab.Screen>
-      </Tab.Navigator>
-    </NavigationContainer>
+    <View>
+      <NavigationContainer>
+        <Tab.Navigator>
+          <Tab.Screen name={"Tasks"} component={TaskScreen}></Tab.Screen>
+          <Tab.Screen name={"Calendar"} component={CalendarScreen}></Tab.Screen>
+        </Tab.Navigator>
+      </NavigationContainer>
+      <StatusBar style="auto"/>
+    </View>
   );
 }
 
