@@ -10,6 +10,8 @@
     "format:fix": "prettier --write ."
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.4.0",
+    "@react-navigation/native": "^6.0.13",
     "expo": "^46.0.16",
     "expo-checkbox": "^2.2.0",
     "expo-splash-screen": "~0.16.2",
