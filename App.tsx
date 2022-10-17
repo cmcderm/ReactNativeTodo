@@ -3,6 +3,8 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import TaskScreen from "./screen/CalendarScreen/CalendarScreen";
+import CalendarScreen from "./screen/TaskScreen/TaskScreen";
 
 export default function App() {
 
